@@ -43,6 +43,7 @@ button {
 img {
   display: block;
   height: auto;
+  max-width: 100%;
 }
 
 /*#endregion reset*/
@@ -63,14 +64,14 @@ img {
 }
 
 .container {
-  min-width: 320px;
+  max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
   }
 }
 
@@ -597,7 +598,6 @@ mobile-contacts {
   padding: 0px 0px 32px 0px;
   width: 264px;
   height: 428px;
-  margin-bottom: 32px;
 }
 
 .team-sybtitle-desc {
@@ -655,8 +655,7 @@ mobile-contacts {
 }
 @media screen and (min-width: 768px) {
   .team {
-    padding: 72px 0;
-    max-width: 768px;
+    padding: 96px 0;
   }
 
   .team-list {
@@ -670,6 +669,7 @@ mobile-contacts {
 @media screen and (min-width: 1158px) {
   .team {
     min-width: 100%;
+    padding: 120px 0;
   }
   .container-team {
     display: flex;
@@ -702,13 +702,26 @@ mobile-contacts {
 .portfolio-list {
   display: flex;
   flex-direction: column;
-  column-gap: 48px;
+  row-gap: 48px;
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .portfolio-subtitle {
   padding-bottom: 16px;
 }
 
+.portfolio-overlay {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .portfolio {
     width: 768px;
@@ -723,8 +736,11 @@ mobile-contacts {
   }
 
   .portfolio-item {
-    width: 356px;
-    height: 420px;
+    width: calc((100% - 24px) / 2);
+  }
+
+  .portfolio-overlay {
+    display: none;
   }
 }
 
@@ -849,7 +865,6 @@ mobile-contacts {
 
 .social-list-footer {
   gap: 16px;
-  margin-right: 64px;
 }
 
 .footer-subscribe {
@@ -860,7 +875,6 @@ mobile-contacts {
 
 .footer-label {
   width: 264px;
-  margin-right: 24px;
 }
 
 .footer-subscribe-text {
@@ -925,9 +939,14 @@ mobile-contacts {
     gap: 24px;
     align-items: baseline;
   }
+  .basement {
+    padding: 108px 0;
+    max-width: 584px;
+  }
 
   .footer-logo {
     display: inline-block;
+    justify-content: start;
     margin-bottom: 16px;
   }
 
@@ -935,12 +954,16 @@ mobile-contacts {
     display: block;
   }
 
+  .label-input {
+    padding: 0;
+  }
   .footer-text {
     max-width: 288px;
   }
 
   .footer-label {
     width: 264px;
+    margin-right: 24px;
   }
 
   .button-subscribe {
