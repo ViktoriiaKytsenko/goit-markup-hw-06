@@ -690,7 +690,7 @@ mobile-contacts {
 
 .portfolio {
   text-transform: capitalize;
-  min-width: 320px;
+  padding: 96px 16px;
 }
 
 .container-portfolio-name {
@@ -703,6 +703,10 @@ mobile-contacts {
   display: flex;
   flex-direction: column;
   row-gap: 48px;
+}
+
+.portfolio-overlay {
+  display: none;
 }
 
 .portfolio-title {
@@ -723,10 +727,6 @@ mobile-contacts {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .portfolio {
-    width: 768px;
-    height: auto;
-  }
   .portfolio-list {
     display: flex;
     flex-direction: row;
@@ -747,12 +747,13 @@ mobile-contacts {
 @media screen and (min-width: 1158px) {
   .portfolio {
     width: 100%;
+    padding: 120px 156px;
   }
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 48px;
+    row-gap: 24px;
   }
 
   .portfolio-item:hover {
@@ -824,7 +825,6 @@ mobile-contacts {
   align-items: center;
 }
 .footer-logo {
-  /* display: inline-block; */
   margin-bottom: 16px;
 }
 
@@ -844,7 +844,6 @@ mobile-contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-right: 80px; */
   align-items: center;
 }
 
@@ -855,7 +854,6 @@ mobile-contacts {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
-  align-items: center;
 }
 
 .social-link-footer:hover,
@@ -939,13 +937,17 @@ mobile-contacts {
     gap: 24px;
     align-items: baseline;
   }
+
   .basement {
     padding: 108px 0;
-    max-width: 584px;
+    max-width: 768px;
   }
 
+  .basement-logo {
+    align-items: baseline;
+  }
   .footer-logo {
-    display: inline-block;
+    display: block;
     justify-content: start;
     margin-bottom: 16px;
   }
@@ -959,6 +961,10 @@ mobile-contacts {
   }
   .footer-text {
     max-width: 288px;
+  }
+
+  .footer-wrapper {
+    align-items: baseline;
   }
 
   .footer-label {
@@ -982,6 +988,8 @@ mobile-contacts {
 @media screen and (min-width: 1158px) {
   .basement {
     padding: 100px 0;
+    min-width: 1158px;
+    margin-right: 80px;
   }
 
   .footer-logo {
@@ -1028,10 +1036,10 @@ mobile-contacts {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 40px 16px;
   border-radius: 4px;
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
@@ -1212,6 +1220,14 @@ mobile-contacts {
   color: #fff;
   min-width: 169px;
   height: 56px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 72px 24px 24px 24px;
+    width: 408px;
+    min-height: 584px;
+  }
 }
 
 /*#endregion */
