@@ -746,7 +746,7 @@ mobile-contacts {
 }
 
 .portfolio-subtitle {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -829,7 +829,6 @@ mobile-contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-items: center;
 }
 
 .social-text {
@@ -884,7 +883,6 @@ mobile-contacts {
   line-height: 2;
   letter-spacing: 0.04em;
   padding-left: 16px;
-  margin-bottom: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
@@ -984,10 +982,12 @@ mobile-contacts {
 
   .footer-wrapper {
     display: block;
+    margin-right: 80px;
   }
 
   .footer-subscribe {
     display: block;
+    gap: 16px;
   }
 }
 /*#endregion footer*/
