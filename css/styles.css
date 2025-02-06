@@ -299,6 +299,10 @@ img {
   color: #404bbf;
 }
 
+.mobile-contacts-item:last-child {
+  margin-bottom: 0;
+}
+
 .social-list-mobil {
   display: flex;
   gap: 40px;
@@ -330,7 +334,7 @@ mobile-contacts {
 }
 
 .mobile-contacts-item {
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .mobile-contacts-tel {
@@ -566,7 +570,9 @@ mobile-contacts {
   justify-content: center;
   gap: 24px;
 }
-
+.container-team-name {
+  padding: 32px 0;
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -595,7 +601,6 @@ mobile-contacts {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
   width: 264px;
   height: 428px;
 }
@@ -603,7 +608,6 @@ mobile-contacts {
 .team-sybtitle-desc {
   text-align: center;
   margin-bottom: 8px;
-  margin-top: 32px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -886,6 +890,7 @@ mobile-contacts {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .label-input::placeholder {
@@ -917,8 +922,9 @@ mobile-contacts {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 72px;
     align-items: baseline;
+    padding-left: 108px;
   }
 
   .basement {
@@ -973,6 +979,10 @@ mobile-contacts {
   .basement {
     padding: 100px 0;
     min-width: 1158px;
+  }
+
+  .footer-container {
+    padding-left: 15px;
   }
 
   .footer-logo {
@@ -1092,7 +1102,8 @@ mobile-contacts {
 }
 
 .label-checkbox-text {
-  display: block;
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
