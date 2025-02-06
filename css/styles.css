@@ -793,7 +793,7 @@ mobile-contacts {
 /*#region footer*/
 
 .basement {
-  padding: 96px 0;
+  padding: 100px 0;
   min-width: 320px;
 }
 
@@ -805,7 +805,6 @@ mobile-contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 72px;
 }
 .basement-logo {
   display: flex;
