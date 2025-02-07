@@ -694,7 +694,7 @@ mobile-contacts {
 
 .portfolio {
   text-transform: capitalize;
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 
 .container-portfolio-name {
